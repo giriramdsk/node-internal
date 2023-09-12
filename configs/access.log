@@ -1,0 +1,11 @@
+::1 POST /users/login 404 - Tue, 12 Sep 2023 07:40:26 GMT
+
+[36mRequest: [33mPOST [37m/users/login [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "email@grr.la",[0m
+[37m	"password": "Test1234",[0m
+[37m	"deviceToken": "epAQ4lgVJsg:APA91bFg6v8rN_hGdHV2_iqB4denPSuyJMnswpyFrPzmETH6ig2qPizowAQ17I81y6dHzZr3k1LtO5YjSkldi4-LxLxl8BW0vMM6Ww7UUWZod5nWrdNR6seS3t9ztN_KSMNIrYegblKe",[0m
+[37m	"device": "android"[0m
+[37m}[0m
+[36mResponse: [33m404 [37m1.767 ms 

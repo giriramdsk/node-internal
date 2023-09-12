@@ -1,0 +1,46 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Kggroup@123",
+    "database": "node_internal",
+    "host": "172.20.6.22:5432",
+    "dialect": "postgres",
+    "define": {
+      "timestamps": true,
+      "freezeTableName": true
+    }
+  },
+  "development1": {
+    "username": "root",
+    "password": null,
+    "database": "node_accrepro",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "define": {
+      "timestamps": true,
+      "freezeTableName": true
+    }
+  },
+  "test": {
+    "username": "your_postgresql_username",
+    "password": "your_postgresql_password",
+    "database": "your_postgresql_database",
+    "host": "localhost",
+    "dialect": "postgres",
+    "define": {
+      "timestamps": true,
+      "freezeTableName": true
+    }
+  },
+  "production": {
+    "username": "your_postgresql_username",
+    "password": "your_postgresql_password",
+    "database": "your_postgresql_database",
+    "host": "localhost",
+    "dialect": "postgres",
+    "define": {
+      "timestamps": true,
+      "freezeTableName": true
+    }
+  }
+}
