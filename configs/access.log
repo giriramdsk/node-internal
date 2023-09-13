@@ -9,3 +9,475 @@
 [37m	"device": "android"[0m
 [37m}[0m
 [36mResponse: [33m404 [37m1.767 ms 
+::1 GET / 304 - Wed, 13 Sep 2023 04:34:51 GMT
+
+[36mRequest: [33mGET [37m/ [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37mHi Buddy[0m
+[36mResponse: [36m304 [37m10.175 ms 
+::1 GET /favicon.ico 404 - Wed, 13 Sep 2023 04:34:51 GMT
+
+[36mRequest: [33mGET [37m/favicon.ico [30mIP: [37m::1[0m
+[36mResponse: [33m404 [37m2.006 ms 
+::1 GET /docs/ 304 - Wed, 13 Sep 2023 04:34:58 GMT
+
+[36mRequest: [33mGET [37m/docs/ [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37m
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199[0m
+[36mResponse: [36m304 [37m7.718 ms 
+::1 GET /docs/swagger-ui-init.js 200 - Wed, 13 Sep 2023 04:34:58 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-init.js [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37m
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": " Node-Seed-v12.12 September-2023",
+      "description": "Node ES6 Seed project swagger implementation",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/user/userListing": {
+        "post": {
+          "tags": [
+            "User Management"
+          ],
+          "description": "User list",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "description": "Para[0m
+[36mResponse: [32m200 [37m0.922 ms 
+::1 GET /docs/swagger-ui-standalone-preset.js 200 - Wed, 13 Sep 2023 04:34:59 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-standalone-preset.js [30mIP: [37m::1[0m
+[36mResponse: [32m200 [37m24.311 ms 
+::1 GET /docs/swagger-ui.css 304 - Wed, 13 Sep 2023 04:34:59 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui.css [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m1.547 ms 
+::1 GET /docs/swagger-ui-bundle.js 200 - Wed, 13 Sep 2023 04:34:59 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-bundle.js [30mIP: [37m::1[0m
+[36mResponse: [32m200 [37m31.275 ms 
+::1 GET / 304 - Wed, 13 Sep 2023 05:06:19 GMT
+
+[36mRequest: [33mGET [37m/ [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37mHi Buddy[0m
+[36mResponse: [36m304 [37m3.855 ms 
+::1 GET /docs/ 304 - Wed, 13 Sep 2023 05:06:27 GMT
+
+[36mRequest: [33mGET [37m/docs/ [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37m
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199[0m
+[36mResponse: [36m304 [37m8.304 ms 
+::1 GET /docs/swagger-ui.css 304 - Wed, 13 Sep 2023 05:06:27 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui.css [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m1.048 ms 
+::1 GET /docs/swagger-ui-bundle.js 304 - Wed, 13 Sep 2023 05:06:27 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-bundle.js [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m2.367 ms 
+::1 GET /docs/swagger-ui-init.js 200 - Wed, 13 Sep 2023 05:06:27 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-init.js [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37m
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": " Node-Seed-v12.12 September-2023",
+      "description": "Node ES6 Seed project swagger implementation",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/admin/login": {
+        "post": {
+          "tags": [
+            "Admin"
+          ],
+          "description": "Login",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "description": "Login",
+              "[0m
+[36mResponse: [32m200 [37m2.103 ms 
+::1 GET /docs/swagger-ui-standalone-preset.js 304 - Wed, 13 Sep 2023 05:06:27 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-standalone-preset.js [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m1.341 ms 
+::1 GET /docs/ 304 - Wed, 13 Sep 2023 05:09:06 GMT
+
+[36mRequest: [33mGET [37m/docs/ [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37m
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199[0m
+[36mResponse: [36m304 [37m3.458 ms 
+::1 GET /docs/swagger-ui.css 304 - Wed, 13 Sep 2023 05:09:06 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui.css [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m2.936 ms 
+::1 GET /docs/swagger-ui-bundle.js 304 - Wed, 13 Sep 2023 05:09:06 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-bundle.js [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m1.806 ms 
+::1 GET /docs/swagger-ui-init.js 200 - Wed, 13 Sep 2023 05:09:06 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-init.js [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37m
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": " Node-Seed-v12.12 September-2023",
+      "description": "Node ES6 Seed project swagger implementation",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/users/register": {
+        "post": {
+          "tags": [
+            "Users"
+          ],
+          "description": "Create new user in system",
+          "parameters": [
+            {
+              "name": "user",
+              "required": true,
+              "in": "body"[0m
+[36mResponse: [32m200 [37m0.785 ms 
+::1 GET /docs/swagger-ui-standalone-preset.js 304 - Wed, 13 Sep 2023 05:09:06 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-standalone-preset.js [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m3.496 ms 
+::1 GET /docs/favicon-32x32.png 304 - Wed, 13 Sep 2023 05:09:07 GMT
+
+[36mRequest: [33mGET [37m/docs/favicon-32x32.png [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m0.803 ms 
+::1 POST /users/login 404 - Wed, 13 Sep 2023 06:08:00 GMT
+
+[36mRequest: [33mPOST [37m/users/login [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "email@grr.la",[0m
+[37m	"password": "Test1234",[0m
+[37m	"deviceToken": "epAQ4lgVJsg:APA91bFg6v8rN_hGdHV2_iqB4denPSuyJMnswpyFrPzmETH6ig2qPizowAQ17I81y6dHzZr3k1LtO5YjSkldi4-LxLxl8BW0vMM6Ww7UUWZod5nWrdNR6seS3t9ztN_KSMNIrYegblKe",[0m
+[37m	"device": "android"[0m
+[37m}[0m
+[36mResponse: [33m404 [37m3.284 ms 
+::1 POST /admin/login 404 - Wed, 13 Sep 2023 06:57:28 GMT
+
+[36mRequest: [33mPOST [37m/admin/login [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "seed_admin@grr.la",[0m
+[37m	"password": "Test1234"[0m
+[37m}[0m
+[36mResponse: [33m404 [37m8.056 ms 
+::1 GET /docs/ 304 - Wed, 13 Sep 2023 07:42:53 GMT
+
+[36mRequest: [33mGET [37m/docs/ [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37m
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199[0m
+[36mResponse: [36m304 [37m14.539 ms 
+::1 GET /docs/swagger-ui-init.js 200 - Wed, 13 Sep 2023 07:42:54 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-init.js [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37m
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": " Node-Seed-v12.12 September-2023",
+      "description": "Node ES6 Seed project swagger implementation",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "basePath": "/api",
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/users/register": {
+        "post": {
+          "tags": [
+            "Users"
+          ],
+          "description": "Create new user in system",
+          "parameters": [
+            {
+              "name": "user",
+              "required": true,
+  [0m
+[36mResponse: [32m200 [37m3.180 ms 
+::1 GET /docs/swagger-ui-bundle.js 304 - Wed, 13 Sep 2023 07:42:54 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-bundle.js [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m4.802 ms 
+::1 GET /docs/swagger-ui-standalone-preset.js 304 - Wed, 13 Sep 2023 07:42:54 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-standalone-preset.js [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m1.524 ms 
+::1 GET /docs/swagger-ui.css 304 - Wed, 13 Sep 2023 07:42:54 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui.css [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m1.283 ms 
+::1 GET /docs/favicon-32x32.png 304 - Wed, 13 Sep 2023 07:42:55 GMT
+
+[36mRequest: [33mGET [37m/docs/favicon-32x32.png [30mIP: [37m::1[0m
+[36mResponse: [36m304 [37m0.704 ms 
+::1 POST /api/admin/login 404 - Wed, 13 Sep 2023 07:42:59 GMT
+
+[36mRequest: [33mPOST [37m/api/admin/login [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "seed_admin@grr.la",[0m
+[37m	"password": "Test1234"[0m
+[37m}[0m
+[36mResponse: [33m404 [37m1.210 ms 
+::1 POST /api/admin/login 404 - Wed, 13 Sep 2023 08:34:55 GMT
+
+[36mRequest: [33mPOST [37m/api/admin/login [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "seed_admin@grr.la",[0m
+[37m	"password": "Test1234"[0m
+[37m}[0m
+[36mResponse: [33m404 [37m1.560 ms 

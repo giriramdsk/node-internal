@@ -6,21 +6,26 @@ let _ = require("lodash");
 class Model {
 
     constructor(collection) {
+        console.log(collection)
+
         this.collection = collection;
     }
 
     // Store Data
     store(data, options = {}) {
         return new Promise((resolve, reject) => {
-            const collectionObject = new this.collection(data)
-            collectionObject.save((err, createdObject) => {
-                if (err) {
-                    return reject({ message: err, status: 0 });
-                }
-                return resolve(createdObject);
-            });
+            console.log(options);
+    
+            this.collection.create(data)
+                .then(createdObject => {
+                    resolve(createdObject);
+                })
+                .catch(err => {
+                    reject({ message: err, status: 0 });
+                });
         });
     }
+    
 
     bulkInsert(data) {
         return new Promise((resolve, reject) => {

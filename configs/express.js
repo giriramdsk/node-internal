@@ -91,12 +91,46 @@ module.exports = function () {
 
   // =======   Routing
   const modules = '/../app/modules';
+//   const files = glob.sync(__dirname + modules + '/**/*Routes.js');
+// require('../app/modules/User/Routes')(app,express)
+  // files.forEach((route) => {
+  //   console.log(route);
+  
+  //   const stats = fs.statSync(route);
+  //   const fileSizeInBytes = stats.size;
+  
+  //   if (fileSizeInBytes) {
+  //     try {
+  //       require(route)(app, express);
+  //     } catch (error) {
+  //       console.error(`Error loading route file: ${route}`);
+  //       console.error(error);
+  //     }
+  //   }
+  // });
+  // require('../app/modules/User/Routes')(app, express);
+
+  // console.log(__dirname + modules + '/**/*Routes.js')
+  glob.sync(__dirname + modules + '/*.js', {}, (err, files) => {
+    // Rest of the code...
+    console.error(files);
+
+  });
   glob.sync(__dirname + modules + '/**/*Routes.js', {}, (err, files) => {
+   if (err) {
+      console.error('Error during glob file search:', err);
+      return;
+    }
+   
     files.forEach((route) => {
       const stats = fs.statSync(route);
       const fileSizeInBytes = stats.size;
       if (fileSizeInBytes) {
-        require(route)(app, express);
+        try {
+          require(route)(app, express);
+        } catch (error) {
+          console.error('Error requiring route file:', error);
+        }
       }
     });
   });

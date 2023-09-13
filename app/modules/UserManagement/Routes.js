@@ -88,6 +88,6 @@ module.exports = (app, express) => {
         const userObj = (new UserManagementController()).boot(req, res);
         return userObj.userListing();
     });
-
+console.log(config.baseApiUrl)
     app.use(config.baseApiUrl, router);
 }

@@ -14,16 +14,16 @@ let https = require('https');
 let config = require('./configs/configs');
 let express = require('./configs/express');
 let mongoose = require('./configs/mongoose');
-let postgres = require('./configs/postgres')
+// let postgres = require('./configs/postgres')
 // let cronService = require('./app/services/Cron');
 // let CommonService = require('./app/services/Common');
-// let seedService = require('./app/services/Seed');
+let seedService = require('./app/services/Seed');
 
 
 let swaggerUi = require('swagger-ui-express');
 
 // HTTP Authentication
-var basicAuth = require('basic-auth');
+var basicAuth = require('basic-auth'); 
 var auth = function (req, res, next) {
     var user = basicAuth(req);
     if (!user || !user.name || !user.pass) {
@@ -63,6 +63,9 @@ if (process.env.NODE_ENV !== "production") {
 
     const modules = './app/modules';
     fs.readdirSync(modules).forEach(file => {
+
+        if(file ==='Admin' || file === 'Roles' || file === 'User'){
+
         if (fs.existsSync(modules + '/' + file + '/swagger.json')) {
             const stats = fs.statSync(modules + '/' + file + '/swagger.json');
             const fileSizeInBytes = stats.size;
@@ -73,6 +76,7 @@ if (process.env.NODE_ENV !== "production") {
                 mainSwaggerData.definitions = { ...swaggerData.definitions, ...mainSwaggerData.definitions };
             }
         }
+    }
     });
     if (config.isHTTPAuthForSwagger && config.isHTTPAuthForSwagger == 'true') {
         app.get("/docs", auth, (req, res, next) => {
@@ -84,7 +88,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 // (new cronService()).scheduleCronJobs();
-// (new seedService()).seedData();
+(new seedService()).seedData();
 
 
 // postgres.getcon((err)=>{
