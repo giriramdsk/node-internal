@@ -6,7 +6,7 @@ let i18n = require("i18n");
 const { validationResult } = require('express-validator');
 const { body, check, query, header, param } = require('express-validator');
 
-var commonlyUsedPasswords = require('../../../configs/commonlyUsedPassword').passwords;
+var commonlyUsedPasswords = require('../../../configs/commonlyUsedPassword.json').passwords;
 
 class Validators {
 
@@ -23,7 +23,7 @@ class Validators {
                 check('socialKey').exists().withMessage(i18n.__("%s REQUIRED", 'socialKey')),
             ];
         } catch (error) {
-            return error;
+            return error; 
         }
     }
     /********************************************************

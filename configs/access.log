@@ -481,3 +481,237 @@ window.onload = function() {
 [37m	"password": "Test1234"[0m
 [37m}[0m
 [36mResponse: [33m404 [37m1.560 ms 
+::1 GET / 200 - Fri, 15 Sep 2023 10:51:00 GMT
+
+[36mRequest: [33mGET [37m/ [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37mHi Buddy[0m
+[36mResponse: [32m200 [37m2.203 ms 
+::1 GET /favicon.ico 404 - Fri, 15 Sep 2023 10:51:00 GMT
+
+[36mRequest: [33mGET [37m/favicon.ico [30mIP: [37m::1[0m
+[36mResponse: [33m404 [37m1.175 ms 
+::1 GET /docs 301 - Fri, 15 Sep 2023 10:51:05 GMT
+
+[36mRequest: [33mGET [37m/docs [30mIP: [37m::1[0m
+[36mResponse: [36m301 [37m6.163 ms 
+::1 GET /docs/ 200 - Fri, 15 Sep 2023 10:51:05 GMT
+
+[36mRequest: [33mGET [37m/docs/ [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37m
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199[0m
+[36mResponse: [32m200 [37m3.918 ms 
+::1 GET /docs/swagger-ui-init.js 200 - Fri, 15 Sep 2023 10:51:05 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-init.js [30mIP: [37m::1[0m
+[35mResponse Body:[0m
+[37m
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": " Node-Seed-v12.12 September-2023",
+      "description": "Node ES6 Seed project swagger implementation",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "basePath": "/api",
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/users/register": {
+        "post": {
+          "tags": [
+            "Users"
+          ],
+          "description": "Create new user in system",
+          "parameters": [
+            {
+              "name": "user",
+              "required": true,
+  [0m
+[36mResponse: [32m200 [37m0.752 ms 
+::1 GET /docs/swagger-ui.css 200 - Fri, 15 Sep 2023 10:51:05 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui.css [30mIP: [37m::1[0m
+[36mResponse: [32m200 [37m8.156 ms 
+::1 GET /docs/swagger-ui-standalone-preset.js 200 - Fri, 15 Sep 2023 10:51:05 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-standalone-preset.js [30mIP: [37m::1[0m
+[36mResponse: [32m200 [37m37.943 ms 
+::1 GET /docs/swagger-ui-bundle.js 200 - Fri, 15 Sep 2023 10:51:05 GMT
+
+[36mRequest: [33mGET [37m/docs/swagger-ui-bundle.js [30mIP: [37m::1[0m
+[36mResponse: [32m200 [37m30.428 ms 
+::1 GET /docs/favicon-32x32.png 200 - Fri, 15 Sep 2023 10:51:05 GMT
+
+[36mRequest: [33mGET [37m/docs/favicon-32x32.png [30mIP: [37m::1[0m
+[36mResponse: [32m200 [37m1.957 ms 
+::1 POST /api/users/login 200 - Fri, 15 Sep 2023 10:51:11 GMT
+
+[36mRequest: [33mPOST [37m/api/users/login [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "email@grr.la",[0m
+[37m	"password": "Test1234",[0m
+[37m	"deviceToken": "epAQ4lgVJsg:APA91bFg6v8rN_hGdHV2_iqB4denPSuyJMnswpyFrPzmETH6ig2qPizowAQ17I81y6dHzZr3k1LtO5YjSkldi4-LxLxl8BW0vMM6Ww7UUWZod5nWrdNR6seS3t9ztN_KSMNIrYegblKe",[0m
+[37m	"device": "android"[0m
+[37m}[0m
+[35mResponse Body:[0m
+[37m{[0m
+[37m	"status": 0,[0m
+[37m	"message": "User not exist or is blocked by Admin."[0m
+[37m}[0m
+[36mResponse: [32m200 [37m46.357 ms 
+::1 POST /api/users/register 404 - Fri, 15 Sep 2023 10:51:38 GMT
+
+[36mRequest: [33mPOST [37m/api/users/register [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "email@grr.la",[0m
+[37m	"password": "Test1234",[0m
+[37m	"mobile": "000000000",[0m
+[37m	"lastname": "Bhavsar",[0m
+[37m	"firstname": "Neha",[0m
+[37m	"username": "neha_bhavsar",[0m
+[37m	"deviceToken": "epAQ4lgVJsg:APA91bFg6v8rN_hGdHV2_iqB4denPSuyJMnswpyFrPzmETH6ig2qPizowAQ17I81y6dHzZr3k1LtO5YjSkldi4-LxLxl8BW0vMM6Ww7UUWZod5nWrdNR6seS3t9ztN_KSMNIrYegblKe",[0m
+[37m	"device": "android"[0m
+[37m}[0m
+[36mResponse: [33m404 [37m1.974 ms 
+::1 POST /api/users/login 200 - Fri, 15 Sep 2023 10:52:09 GMT
+
+[36mRequest: [33mPOST [37m/api/users/login [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "email@grr.la",[0m
+[37m	"password": "Test1234",[0m
+[37m	"deviceToken": "epAQ4lgVJsg:APA91bFg6v8rN_hGdHV2_iqB4denPSuyJMnswpyFrPzmETH6ig2qPizowAQ17I81y6dHzZr3k1LtO5YjSkldi4-LxLxl8BW0vMM6Ww7UUWZod5nWrdNR6seS3t9ztN_KSMNIrYegblKe",[0m
+[37m	"device": "android"[0m
+[37m}[0m
+[35mResponse Body:[0m
+[37m{[0m
+[37m	"status": 0,[0m
+[37m	"message": "User not exist or is blocked by Admin."[0m
+[37m}[0m
+[36mResponse: [32m200 [37m4.932 ms 
+::1 POST /api/users/register 200 - Fri, 15 Sep 2023 10:53:25 GMT
+
+[36mRequest: [33mPOST [37m/api/users/register [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "email@grr.la",[0m
+[37m	"password": "Test1234",[0m
+[37m	"mobile": "000000000",[0m
+[37m	"lastname": "Bhavsar",[0m
+[37m	"firstname": "Neha",[0m
+[37m	"username": "neha_bhavsar",[0m
+[37m	"deviceToken": "epAQ4lgVJsg:APA91bFg6v8rN_hGdHV2_iqB4denPSuyJMnswpyFrPzmETH6ig2qPizowAQ17I81y6dHzZr3k1LtO5YjSkldi4-LxLxl8BW0vMM6Ww7UUWZod5nWrdNR6seS3t9ztN_KSMNIrYegblKe",[0m
+[37m	"device": "android"[0m
+[37m}[0m
+[35mResponse Body:[0m
+[37m{[0m
+[37m	"status": 0,[0m
+[37m	"message": {[0m
+[37m		"sattus": 0,[0m
+[37m		"message": {[0m
+[37m			"errno": -111,[0m
+[37m			"code": "ESOCKET",[0m
+[37m			"syscall": "connect",[0m
+[37m			"address": "127.0.0.1",[0m
+[37m			"port": 123,[0m
+[37m			"command": "CONN"[0m
+[37m		}[0m
+[37m	}[0m
+[37m}[0m
+[36mResponse: [32m200 [37m644.132 ms 
+::1 POST /api/users/register 200 - Fri, 15 Sep 2023 10:53:34 GMT
+
+[36mRequest: [33mPOST [37m/api/users/register [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "email@grr.la",[0m
+[37m	"password": "Test1234",[0m
+[37m	"mobile": "000000000",[0m
+[37m	"lastname": "Bhavsar",[0m
+[37m	"firstname": "Neha",[0m
+[37m	"username": "neha_bhavsar",[0m
+[37m	"deviceToken": "epAQ4lgVJsg:APA91bFg6v8rN_hGdHV2_iqB4denPSuyJMnswpyFrPzmETH6ig2qPizowAQ17I81y6dHzZr3k1LtO5YjSkldi4-LxLxl8BW0vMM6Ww7UUWZod5nWrdNR6seS3t9ztN_KSMNIrYegblKe",[0m
+[37m	"device": "android"[0m
+[37m}[0m
+[35mResponse Body:[0m
+[37m{[0m
+[37m	"status": 0,[0m
+[37m	"message": "User is exist with given email Id or username."[0m
+[37m}[0m
+[36mResponse: [32m200 [37m8.216 ms 
+::1 POST /api/users/login 200 - Fri, 15 Sep 2023 10:53:57 GMT
+
+[36mRequest: [33mPOST [37m/api/users/login [30mIP: [37m::1[0m
+[35mRequest Body:[0m
+[37m{[0m
+[37m	"emailId": "email@grr.la",[0m
+[37m	"password": "Test1234",[0m
+[37m	"deviceToken": "epAQ4lgVJsg:APA91bFg6v8rN_hGdHV2_iqB4denPSuyJMnswpyFrPzmETH6ig2qPizowAQ17I81y6dHzZr3k1LtO5YjSkldi4-LxLxl8BW0vMM6Ww7UUWZod5nWrdNR6seS3t9ztN_KSMNIrYegblKe",[0m
+[37m	"device": "android"[0m
+[37m}[0m
+[35mResponse Body:[0m
+[37m{[0m
+[37m	"status": 0,[0m
+[37m	"message": "Please verify your email Id."[0m
+[37m}[0m
+[36mResponse: [32m200 [37m5.843 ms 

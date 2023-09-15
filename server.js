@@ -10,6 +10,7 @@ let exp = require('express');
 let path = require('path');
 let fs = require('fs');
 let https = require('https');
+let i18n = require("i18n");
 
 let config = require('./configs/configs');
 let express = require('./configs/express');
@@ -19,7 +20,11 @@ let mongoose = require('./configs/mongoose');
 // let CommonService = require('./app/services/Common');
 let seedService = require('./app/services/Seed');
 
-
+i18n.configure({
+    locales: ['en'],
+    directory: __dirname + '/app/locales',
+    defaultLocale: 'en',
+}); 
 let swaggerUi = require('swagger-ui-express');
 
 // HTTP Authentication

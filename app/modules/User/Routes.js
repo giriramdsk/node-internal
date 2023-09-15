@@ -7,6 +7,11 @@ module.exports = (app, express) => {
     const config = require('../../../configs/configs');
     const Validators = require("./Validator");
 
+    router.post('/users/register', Validators.userSignupValidator(), Validators.validate, (req, res, next) => {
+        const userObj = (new UsersController()).boot(req, res);
+        return userObj.register();
+    });
+
     router.post('/users/forgotPassword', Validators.emailValidator(), Validators.validate, (req, res, next) => {
         const userObj = (new UsersController()).boot(req, res);
         return userObj.forgotPasswordMail();
@@ -18,8 +23,6 @@ module.exports = (app, express) => {
     });
 
     router.post('/users/login', Validators.loginValidator(), Validators.validate, (req, res, next) => {
-        console.log("test")
-      
         const userObj = (new UsersController()).boot(req, res);
         return userObj.login();
     });
@@ -60,6 +63,5 @@ module.exports = (app, express) => {
         const userObj = (new UsersController()).boot(req, res);
         return userObj.socialAccess();
     });
-console.log(config.baseApiUrl,router)
     app.use(config.baseApiUrl, router);
 }
